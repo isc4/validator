@@ -37,16 +37,16 @@ public function ischeckForEmpty($data)
 
 //2. Исключение пустоты(пробелов) и спец. символов
 /*
-* trimSpaceAdnSpchar( string $data ) : string
+* trimSpaceAndSpchar( string $data ) : string
 */
-public function trimSpaceAdnSpchar($data)
+public function trimSpaceAndSpchar($data)
 {
     return trim(htmlspecialchars($data));
 }
 
 // 3. Проверка длинны пароля на соответствие
 /*
-* trimSpaceAdnSpchar( string $password, integer $longPass ) : bool
+* ispasswordLong( string $password, integer $longPass ) : bool
 */
 public function ispasswordLong($password, int $longPass)
 {
